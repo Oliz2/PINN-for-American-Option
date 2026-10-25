@@ -1,0 +1,51 @@
+# Allowlist: this folder also contains thesis material that is not part of the repository.
+# Everything is ignored except the paths explicitly re-included below.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+
+# ---- C++ project: only the build file and the sources (no build/, no old CSV/Excel results) ----
+!/C++_Progetto/
+/C++_Progetto/*
+!/C++_Progetto/CMakeLists.txt
+!/C++_Progetto/src/
+
+# ---- Java project (Maven): pom.xml and sources only (no target/, logs, IDE files) ----
+!/Java_Progetto/
+/Java_Progetto/*
+!/Java_Progetto/pom.xml
+!/Java_Progetto/src/
+
+# ---- PINN interface: source files only (no runs/, no result images, no old Italian copies) ----
+!/Grafici_python_PINN/
+/Grafici_python_PINN/*
+!/Grafici_python_PINN/app.py
+!/Grafici_python_PINN/charts.py
+!/Grafici_python_PINN/results.py
+!/Grafici_python_PINN/runner.py
+!/Grafici_python_PINN/settings.py
+!/Grafici_python_PINN/requirements.txt
+!/Grafici_python_PINN/README.md
+!/Grafici_python_PINN/esempio_config.json
+
+# ---- Monte Carlo interface: source files and Java sources (no runs/, no compiled classes) ----
+!/Grafici_python_MonteCarlo/
+/Grafici_python_MonteCarlo/*
+!/Grafici_python_MonteCarlo/app.py
+!/Grafici_python_MonteCarlo/charts_mc.py
+!/Grafici_python_MonteCarlo/results_mc.py
+!/Grafici_python_MonteCarlo/runner_mc.py
+!/Grafici_python_MonteCarlo/settings_mc.py
+!/Grafici_python_MonteCarlo/requirements.txt
+!/Grafici_python_MonteCarlo/README.md
+!/Grafici_python_MonteCarlo/java/
+/Grafici_python_MonteCarlo/java/*
+!/Grafici_python_MonteCarlo/java/src/
+
+# ---- Anywhere ----
+__pycache__/
+*.pyc
+*.class
+.vscode/
+.idea/

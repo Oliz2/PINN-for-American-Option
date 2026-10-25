@@ -1,0 +1,32 @@
+{
+  "option": { "type": "put", "numberOfAssets": 1, "strike": 10.0, "maturity": 3.0 },
+  "market": { "riskFreeRate": 0.01, "dividendYields": [0.0], "volatilityMatrix": [[0.05]] },
+  "pricing": { "spotPrices": [[8.0], [9.0], [9.5], [10.0], [10.5], [11.0], [12.0]], "valuationTime": 0.0 },
+  "domain": { "sMax": 30.0 },
+  "network": { "solHiddenLayers": 8, "solHiddenUnits": 20, "fbHiddenLayers": 3, "fbHiddenUnits": 100 },
+  "points": {
+    "pde": 30000, "initial": 300, "dirichlet": 300, "fbDirichlet": 300, "fbNeumann": 300,
+    "sampling": "sobol", "strikeRefinementFraction": 0.3, "strikeRefinementHalfWidth": 2.0
+  },
+  "variants": {
+    "name": "norm,refine,penalty,slowlr",
+    "normalizeInputs": true, "hardTerminalCondition": false, "enforceIntrinsicValue": true,
+    "constrainedFreeBoundary": false, "penaltyFormulation": true, "exerciseTolerance": 0.001,
+    "doublePrecision": false
+  },
+  "weights": { "pde": 1.0, "initial": 1.0, "dirichlet": 1.0, "fbInitial": 1.0, "fbDirichlet": 1.0, "fbNeumann": 1.0 },
+  "training": {
+    "epochs": 1500, "solutionStepsPerBoundaryStep": 20, "separateBoundaryOptimizer": false,
+    "solution": { "initialLearningRate": 0.01, "decaySteps": 500, "decayRate": 0.9 },
+    "boundary": { "initialLearningRate": 0.01, "decaySteps": 500, "decayRate": 0.9 },
+    "rmspropRho": 0.9, "rmspropEpsilon": 1e-7,
+    "slowDecayToFinalLearningRate": true, "finalLearningRate": 0.0001,
+    "verbose": false, "logEvery": 10
+  },
+  "testSet": { "pdePoints": 1000000, "pdeBatchSize": 20000, "boundaryPoints": 1000 },
+  "output": {
+    "printPriceTable": true, "tableSMin": 8.0, "tableSMax": 12.0, "tableSSteps": 9, "tableTSteps": 10,
+    "exportCsv": true, "curveTSteps": 600, "surfaceSMax": 15.0, "surfaceSSteps": 150, "surfaceTSteps": 150
+  },
+  "seeds": [5]
+}
