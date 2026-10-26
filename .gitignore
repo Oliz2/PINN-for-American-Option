@@ -6,42 +6,42 @@
 !/docs/
 
 # ---- C++ project: only the build file and the sources (no build/, no old CSV/Excel results) ----
-!/C++_Progetto/
-/C++_Progetto/*
-!/C++_Progetto/CMakeLists.txt
-!/C++_Progetto/src/
+!/C++_Project/
+/C++_Project/*
+!/C++_Project/CMakeLists.txt
+!/C++_Project/src/
 
 # ---- Java project (Maven): pom.xml and sources only (no target/, logs, IDE files) ----
-!/Java_Progetto/
-/Java_Progetto/*
-!/Java_Progetto/pom.xml
-!/Java_Progetto/src/
+!/Java_Project/
+/Java_Project/*
+!/Java_Project/pom.xml
+!/Java_Project/src/
 
 # ---- PINN interface: source files only (no runs/, no result images, no old Italian copies) ----
-!/Grafici_python_PINN/
-/Grafici_python_PINN/*
-!/Grafici_python_PINN/app.py
-!/Grafici_python_PINN/charts.py
-!/Grafici_python_PINN/results.py
-!/Grafici_python_PINN/runner.py
-!/Grafici_python_PINN/settings.py
-!/Grafici_python_PINN/requirements.txt
-!/Grafici_python_PINN/README.md
-!/Grafici_python_PINN/esempio_config.json
+!/Charts_python_PINN/
+/Charts_python_PINN/*
+!/Charts_python_PINN/app.py
+!/Charts_python_PINN/charts.py
+!/Charts_python_PINN/results.py
+!/Charts_python_PINN/runner.py
+!/Charts_python_PINN/settings.py
+!/Charts_python_PINN/requirements.txt
+!/Charts_python_PINN/README.md
+!/Charts_python_PINN/example_config.json
 
 # ---- Monte Carlo interface: source files and Java sources (no runs/, no compiled classes) ----
-!/Grafici_python_MonteCarlo/
-/Grafici_python_MonteCarlo/*
-!/Grafici_python_MonteCarlo/app.py
-!/Grafici_python_MonteCarlo/charts_mc.py
-!/Grafici_python_MonteCarlo/results_mc.py
-!/Grafici_python_MonteCarlo/runner_mc.py
-!/Grafici_python_MonteCarlo/settings_mc.py
-!/Grafici_python_MonteCarlo/requirements.txt
-!/Grafici_python_MonteCarlo/README.md
-!/Grafici_python_MonteCarlo/java/
-/Grafici_python_MonteCarlo/java/*
-!/Grafici_python_MonteCarlo/java/src/
+!/Charts_python_MonteCarlo/
+/Charts_python_MonteCarlo/*
+!/Charts_python_MonteCarlo/app.py
+!/Charts_python_MonteCarlo/charts_mc.py
+!/Charts_python_MonteCarlo/results_mc.py
+!/Charts_python_MonteCarlo/runner_mc.py
+!/Charts_python_MonteCarlo/settings_mc.py
+!/Charts_python_MonteCarlo/requirements.txt
+!/Charts_python_MonteCarlo/README.md
+!/Charts_python_MonteCarlo/java/
+/Charts_python_MonteCarlo/java/*
+!/Charts_python_MonteCarlo/java/src/
 
 # ---- Anywhere ----
 __pycache__/
